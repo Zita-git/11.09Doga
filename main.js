@@ -8,7 +8,7 @@ function szovegMegvaltozott(){
     if(szoveg===""){
         document.getElementById("szovegHiba").innerHTML = "A szöveget meg kell adni!";
     }else if(szoveg===" "){
-        document.getElementById("szovegHiba").innerHTML = "A szöveget meg kell adni!";
+        document.getElementById("szovegHiba").innerHTML = "A szöveg nem lehet csak egy space!";
     }else{
         document.getElementById("szovegHiba").innerHTML = "";
     }
@@ -49,12 +49,24 @@ function szovSzinBillentyu(e){
     e.stopPropagation();
 }
 
+function hatterSzinMegvaltozott(){
+    let szin=document.getElementById("hatterSzin").value;
+    document.getElementById("elonezet").style.backgroundColor=szin;
+}
+
+function hatterSzinBillentyu(e){
+    e.stopPropagation();
+}
+
 
 
 function alap(){
 
     document.getElementById("elonezet").style.color= '#000000';
     document.getElementById("szovSzin").value= '#000000';
+
+    document.getElementById("elonezet").style.backgroundColor= '#ffffff';
+    document.getElementById("hatterSzin").value= '#ffffff';
 
     document.getElementById("elonezet").style.fontSize = 12+"pt";
     document.getElementById("meret").value= 12;
@@ -76,6 +88,9 @@ function init(){
 
     document.getElementById("szovSzin").addEventListener("input", szovSzinMegvaltozott);
     document.addEventListener("keydown", szovSzinBillentyu);
+    
+    document.getElementById("hatterSzin").addEventListener("input", hatterSzinMegvaltozott);
+    document.addEventListener("keydown", hatterSzinBillentyu);
     
 }
 document.addEventListener("DOMContentLoaded", init);
