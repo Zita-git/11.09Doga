@@ -9,15 +9,19 @@
     <script src='main.js'></script>
 </head>
 <body>
-
+<div>
     <div class="doboz">
         <div>
             <p>Mintaszöveg:</p>
-            <input id="szoveg" type="text" placeholder="Árvíztűrő tükörfúrógép"><span id="szovegHiba"></span>
+            <input id="szoveg" type="text" value="Árvíztűrő tükörfúrógép">
+            <br>
+            <span id="szovegHiba"></span>
         </div>
         <div>
             <p>Betűméret:</p>
-            <input id="meret" type="number" placeholder="12"><span id="meretHiba"></span>
+            <input id="meret" type="number" value="12" min="1">
+            <br>
+            <span id="meretHiba"></span>
         </div>
         <div>
             <p>Szövegszín:</p>
@@ -25,15 +29,15 @@
         </div>
         <div>
             <p>Háttérszín:</p>
-            <input id="hatterSzin" type="color" placeholder="white">
+            <input id="hatterSzin" type="color" value="#ffffff" >
         </div>
         <button id="alaphelyzet">Alaphelyzet</button>
     </div>
     <div class="also">
         <h1>Előnézet</h1>
-        <span id="elonezet"></span>
+        <span id="elonezet">Árvíztűrő tükörfúrógép</span>
     </div>
-
+</div>
     
 </body>
 </html>

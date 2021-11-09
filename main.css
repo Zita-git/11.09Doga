@@ -3,12 +3,23 @@
     margin: 1em;
     padding: 1em;
 }
-.hibauzenet{
+#meretHiba{
     color: red;
-    font-size: 0.5em;
+    font-size: 0.9em;
 }
-
+#szovegHiba{
+    color: red;
+    font-size: 0.9em;
+}
+ input{
+     width: 100%;
+ }
 .alap{
     color: black;
     background-color: white;
+}
+button{
+    margin-left: 50%;
+    margin-top: 1em;
+    width: min-content;
 }
