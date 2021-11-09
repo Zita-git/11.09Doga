@@ -1,0 +1,9 @@
+.doboz{
+    background-color: silver;
+    margin: 1em;
+    padding: 1em;
+}
+.hibauzenet{
+    color: red;
+    font-size: 0.5em;
+}
