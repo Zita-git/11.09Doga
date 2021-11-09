@@ -3,6 +3,10 @@
     margin: 1em;
     padding: 1em;
 }
+.also{
+    margin: 1em;
+    padding: 1em;
+}
 #meretHiba{
     color: red;
     font-size: 0.9em;
@@ -11,7 +15,10 @@
     color: red;
     font-size: 0.9em;
 }
- input{
+#elonezet{
+    text-align: center;
+}
+input{
      width: 100%;
  }
 .alap{
@@ -19,7 +26,5 @@
     background-color: white;
 }
 button{
-    margin-left: 50%;
-    margin-top: 1em;
     width: min-content;
 }
