@@ -40,10 +40,21 @@ function meretBillentyu(e){
     e.stopPropagation();
 }
 
+function szovSzinMegvaltozott(){
+    let szin=document.getElementById("szovSzin").value;
+    document.getElementById("elonezet").style.color=szin;
+}
+
+function szovSzinBillentyu(e){
+    e.stopPropagation();
+}
+
 
 
 function alap(){
-    szoveg.classList.add("alap");
+
+    document.getElementById("elonezet").style.color= '#000000';
+    document.getElementById("szovSzin").value= '#000000';
 
     document.getElementById("elonezet").style.fontSize = 12+"pt";
     document.getElementById("meret").value= 12;
@@ -62,6 +73,9 @@ function init(){
 
     document.getElementById("meret").addEventListener("input", meretMegvaltozott);
     document.addEventListener("keydown", meretBillentyu);
+
+    document.getElementById("szovSzin").addEventListener("input", szovSzinMegvaltozott);
+    document.addEventListener("keydown", szovSzinBillentyu);
     
 }
 document.addEventListener("DOMContentLoaded", init);
